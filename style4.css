@@ -1,0 +1,24 @@
+*{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-auto-rows: 210px;
+    grid-gap: 10px;
+}
+.gallery > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    border-radius: 0.5rem;
+}
